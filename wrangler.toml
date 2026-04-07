@@ -1,0 +1,5 @@
+name = "trellys-learn-build-rise"
+pages_build_output_dir = "."
+
+[env.production]
+# Add any production variables here if needed

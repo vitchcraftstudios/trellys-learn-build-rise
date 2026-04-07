@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trellys Rise — Electrical Engineering Training Lab | Uttarakhand</title>
+  <meta name="description" content="Explore electrical engineering in Uttarakhand with Trellys Rise - Electrical Training Lab. Build real-world skills for a brighter career." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="assets/logo.png" alt="Trellys Rise Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">Trellys</span><span class="logo-tag">Rise</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="index.html#features" class="nav-link" id="nav-features">Features</a></li>
+        <li><a href="courses.html" class="nav-link" id="nav-courses">Courses</a></li>
+        <li><a href="index.html#faq" class="nav-link" id="nav-faq">FAQ</a></li>
+        <li><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="tel:+919403893354" class="btn btn-primary nav-cta" id="nav-cta-call">Talk to Us</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-circuit-lines">
+      <svg class="circuit-svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice">
+        <path class="circuit-path c1" d="M0,350 L200,350 L200,200 L400,200 L400,350 L600,350" />
+        <path class="circuit-path c2" d="M800,100 L800,300 L1000,300 L1000,150 L1200,150 L1200,400 L1440,400" />
+        <path class="circuit-path c3" d="M100,600 L300,600 L300,450 L550,450 L550,550 L750,550" />
+        <circle class="circuit-node" cx="200" cy="350" r="5"/>
+        <circle class="circuit-node" cx="400" cy="200" r="5"/>
+        <circle class="circuit-node" cx="800" cy="300" r="5"/>
+        <circle class="circuit-node" cx="1000" cy="150" r="5"/>
+        <circle class="circuit-node" cx="300" cy="600" r="5"/>
+        <circle class="circuit-node" cx="550" cy="450" r="5"/>
+      </svg>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-badges">
+        <span class="badge" id="badge-kids">Kids</span>
+        <span class="badge" id="badge-pro">Professionals</span>
+        <span class="badge" id="badge-schools">Schools & Universities</span>
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        Learning <span class="gradient-text">Beyond</span><br />Boundaries
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        Unlock your potential with hands-on electrical engineering training designed to<br />
+        boost your skills and confidence. Rise stronger, smarter, and ready to tackle real-world challenges.
+      </p>
+      <div class="hero-cta-group">
+        <a href="courses.html" class="btn btn-primary btn-lg" id="hero-cta-courses">Explore Courses</a>
+        <a href="contact.html" class="btn btn-outline btn-lg" id="hero-cta-contact">Talk to Us</a>
+      </div>
+      <div class="hero-pillars">
+        <div class="pillar" id="pillar-learn">
+          <span class="pillar-icon">⚡</span>
+          <div class="pillar-text-group">
+            <strong>Learn</strong>
+            <p>Master core engineering concepts.</p>
+          </div>
+        </div>
+        <div class="pillar" id="pillar-build">
+          <span class="pillar-icon">🔧</span>
+          <div class="pillar-text-group">
+            <strong>Build</strong>
+            <p>Turn knowledge into real skills.</p>
+          </div>
+        </div>
+        <div class="pillar" id="pillar-rise">
+          <span class="pillar-icon">🚀</span>
+          <div class="pillar-text-group">
+            <strong>Rise</strong>
+            <p>Grow with purpose and confidence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY STRIP -->
+  <section class="trusted-strip" id="trusted">
+    <div class="container">
+      <p class="trusted-label">Trusted by Engineers, Students & Institutions</p>
+      <div class="trust-logos">
+        <span class="trust-item" id="trust-1">🏭 Industry Professionals</span>
+        <span class="trust-item" id="trust-2">🎓 Engineering Students</span>
+        <span class="trust-item" id="trust-3">🏫 Schools & Colleges</span>
+        <span class="trust-item" id="trust-4">⚙️ ITI Graduates</span>
+        <span class="trust-item" id="trust-5">🔌 Technicians</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Choose Trellys</span>
+        <h2 class="section-title">Innovative Learning for Future Engineers</h2>
+        <p class="section-desc">Ready to build real skills that lead to real opportunities? Explore what makes our platform stand out.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" id="feat-engage">
+          <div class="feature-icon">⚡</div>
+          <h3>Engage</h3>
+          <p>Ignite your journey with our immersive offline courses, designed to spark your passion for electrical engineering.</p>
+        </div>
+        <div class="feature-card" id="feat-network">
+          <div class="feature-icon">🌐</div>
+          <h3>Power Network</h3>
+          <p>Unleash your potential across regions in our innovative programs, connecting you with a network of learners.</p>
+        </div>
+        <div class="feature-card" id="feat-workshop">
+          <div class="feature-icon">🔧</div>
+          <h3>Workshop</h3>
+          <p>Join electrifying offline workshops where hands-on learning meets cutting-edge engineering insights.</p>
+        </div>
+        <div class="feature-card" id="feat-experts">
+          <div class="feature-icon">👨‍🏫</div>
+          <h3>Our Experts</h3>
+          <p>Master electrical engineering with top-tier instructors, bringing expertise and inspiration to every session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY STRIP -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="philosophy-grid">
+        <div class="phil-col" id="phil-professional">
+          <h3>Professional & Confident</h3>
+          <ul>
+            <li>Built for Practice, Not Just Theory</li>
+            <li>Where Learning Meets Application</li>
+            <li>From Tools to Techniques — Real Learning Happens Here</li>
+          </ul>
+        </div>
+        <div class="phil-col" id="phil-student">
+          <h3>Aspirational & Student-Focused</h3>
+          <ul>
+            <li>Learn the Way the Industry Works</li>
+            <li>Don't Just Study — Build, Test, and Grow</li>
+            <li>Because You Deserve More Than Chalk and Talk</li>
+          </ul>
+        </div>
+        <div class="phil-col" id="phil-norm">
+          <h3>Challenging the Norm</h3>
+          <ul>
+            <li>Rethinking Engineering Education</li>
+            <li>Say Goodbye to Passive Learning</li>
+            <li>Not the Usual Classroom. Not the Usual Outcome.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY TRELLYS -->
+  <section class="why-trellys" id="why-trellys">
+    <div class="container">
+      <div class="why-content" style="grid-template-columns: 1fr 1fr; gap: 60px;">
+        <div class="why-text">
+          <span class="section-tag">Our Approach</span>
+          <h2 class="section-title">Engineering Education That Moves Beyond the Classroom</h2>
+          <p>Designed to Give You Real Skills, Real Tools, and Real Confidence.</p>
+          <div class="why-points">
+            <div class="why-point" id="why-1">
+              <span class="why-icon">🔋</span>
+              <p>Learn by doing — from circuits to systems, every lesson is grounded in real application.</p>
+            </div>
+            <div class="why-point" id="why-2">
+              <span class="why-icon">👷</span>
+              <p>Our instructors are experienced engineers who bring industry insights into every session.</p>
+            </div>
+            <div class="why-point" id="why-3">
+              <span class="why-icon">🛠️</span>
+              <p>Get your hands on tools, instruments, and projects that mirror real-world scenarios.</p>
+            </div>
+            <div class="why-point" id="why-4">
+              <span class="why-icon">📈</span>
+              <p>Build skills that matter, with support that helps you grow personally and professionally.</p>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual">
+          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800&auto=format&fit=crop" style="border-radius: var(--radius-xl); border: 1px solid var(--green-600); box-shadow: var(--shadow-green);" alt="Engineering Education taking place" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section style="background: var(--light-bg); padding-bottom: 100px;">
+    <div class="container">
+      <div class="why-stats">
+        <div class="stat-card" id="stat-1">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Core Course Areas</span>
+        </div>
+        <div class="stat-card" id="stat-2">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Hands-On Training</span>
+        </div>
+        <div class="stat-card" id="stat-3">
+          <span class="stat-num">✓</span>
+          <span class="stat-label">Certified on Completion</span>
+        </div>
+        <div class="stat-card" id="stat-4">
+          <span class="stat-num">Mon–Sat</span>
+          <span class="stat-label">9 AM – 5 PM Classes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section class="outcomes" id="outcomes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Your Future</span>
+        <h2 class="section-title">Where Trellys Takes You</h2>
+      </div>
+      <div class="outcomes-grid">
+        <div class="outcome-card" id="outcome-placement">
+          <div class="outcome-icon">🏢</div>
+          <h3>Placement Opportunities</h3>
+          <p>Trellys doesn't stop at teaching — it supports your transition into the workforce. With strong industry connections and offline career guidance, students get real chances at job placements that match their skills and interests.</p>
+        </div>
+        <div class="outcome-card" id="outcome-growth">
+          <div class="outcome-icon">📊</div>
+          <h3>Career Growth Ahead</h3>
+          <p>Our training focuses on practical knowledge, real tools, and solid foundations. Students not only get hired — they're prepared to grow in their roles, take on challenges, and explore higher positions as their careers unfold.</p>
+        </div>
+        <div class="outcome-card" id="outcome-begin">
+          <div class="outcome-icon">🌅</div>
+          <h3>A Better Place to Begin</h3>
+          <p>By the time students finish their course at Trellys, they've already built more than just technical ability — they've built confidence. With clarity about their direction, they're positioned to start strong and rise further.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" aria-expanded="false">
+            What does Trellys offer to learners?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Trellys offers a variety of high-quality electrical engineering courses designed for learners at all stages. Our platform covers foundational concepts to specialized areas like power systems, automation, and renewable energy. Whether you're advancing your career or exploring new interests, Trellys provides the resources you need to succeed.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" aria-expanded="false">
+            Is there a fee to access courses on Trellys?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, all of our courses require a one-time payment or subscription. Each course page provides clear pricing details so you can choose the one that fits your budget and needs.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" aria-expanded="false">
+            How are Trellys courses delivered?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Trellys courses are delivered through in-person, offline sessions. You'll attend scheduled classes at our training centers, where you'll benefit from hands-on learning, direct instructor support, and a collaborative environment with peers.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" aria-expanded="false">
+            Will I get a certificate after completing a course?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Once you finish a course, you'll receive a certificate of completion that you can use to enhance your professional profile or share with employers.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" aria-expanded="false">
+            What if I need help while taking a course?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>If you need assistance, Trellys offers support through our help desk. Many courses also feature discussion forums where you can ask questions and interact with instructors or fellow learners for guidance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-cta">
+        <p>Have more questions?</p>
+        <a href="contact.html" class="btn btn-primary" id="faq-cta-contact">Contact Trellys Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" id="cta-band">
+    <div class="container">
+      <h2>Ready to Start Your Engineering Journey?</h2>
+      <p>Join Trellys Rise — where learning meets application.</p>
+      <div class="cta-band-btns">
+        <a href="courses.html" class="btn btn-primary btn-lg" id="cta-band-courses">View All Courses</a>
+        <a href="tel:+919403893354" class="btn btn-outline-dark btn-lg" id="cta-band-call">📞 +91 94038 93354</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+            <img src="assets/logo.png" alt="Trellys Rise" class="footer-logo" style="height: 45px; width: auto;" />
+            <span class="footer-logo-text" style="font-family: var(--font-main); font-weight: 800; font-size: 1.5rem; color: var(--white);">Trellys <span style="color: var(--gold-500); font-size: 0.9rem; text-transform: uppercase;">Rise</span></span>
+          </a>
+          <p class="footer-tagline">Learn. Build. Rise.</p>
+          <p class="footer-desc">Practical electrical engineering training for the next generation of engineers.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html" id="footer-home">Home</a></li>
+            <li><a href="index.html#features" id="footer-features">Features</a></li>
+            <li><a href="courses.html" id="footer-courses">Courses</a></li>
+            <li><a href="about.html" id="footer-about">About</a></li>
+            <li><a href="contact.html" id="footer-contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html" id="footer-terms">Terms & Conditions</a></li>
+            <li><a href="privacy.html" id="footer-privacy">Privacy Policy</a></li>
+            <li><a href="accessibility.html" id="footer-accessibility">Accessibility Statement</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Connect with Trellys</h4>
+          <p>📍 9R5R+WX9, Shankerpur Hakumatpur,<br/>Uttarakhand 248011, India</p>
+          <p>📧 <a href="mailto:support@trellysrise.com" id="footer-email">support@trellysrise.com</a></p>
+          <p>📞 <a href="tel:+919403893354" id="footer-phone">+91 94038 93354</a></p>
+          <a href="https://t.me/trellysrisechannel" class="btn btn-outline btn-sm" id="footer-telegram" target="_blank" rel="noopener">Join Telegram Channel</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 by TrellysRise.COM | Built by <a href="https://vitchcraft.studio" target="_blank" rel="noopener" id="footer-built-by">Vitchcraft.Studio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
