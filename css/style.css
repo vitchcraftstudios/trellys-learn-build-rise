@@ -277,13 +277,13 @@ h1,h2,h3,h4,h5 { font-family: var(--font-main); line-height: 1.15; color: var(--
 }
 
 /* Base glowing orb behind hero */
-.hero::before {
+.hero::before, .page-hero::before {
   content: ''; position: absolute; width: 400px; height: 400px;
   background: radial-gradient(circle, rgba(245,197,24,0.15) 0%, transparent 70%);
   top: 10%; right: 10%; filter: blur(40px); border-radius: 50%;
   animation: floatOrb 8s ease-in-out infinite alternate;
 }
-.hero::after {
+.hero::after, .page-hero::after {
   content: ''; position: absolute; width: 500px; height: 500px;
   background: radial-gradient(circle, rgba(26,122,60,0.15) 0%, transparent 70%);
   bottom: -10%; left: 10%; filter: blur(60px); border-radius: 50%;
