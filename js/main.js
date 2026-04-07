@@ -145,3 +145,15 @@ if (statNums.length && 'IntersectionObserver' in window) {
   }, { threshold: 0.5 });
   statNums.forEach(n => statObs.observe(n));
 }
+
+// ─── SPLASH SCREEN HIDE ──────────────────────────────────────
+window.addEventListener('load', () => {
+  const splash = document.getElementById('splash-screen');
+  if (splash) {
+    setTimeout(() => {
+      splash.classList.add('fade-out');
+      // Set body to overflow visible if it was hidden
+      document.body.style.overflow = 'auto';
+    }, 1500); // Allow animation to play
+  }
+});
