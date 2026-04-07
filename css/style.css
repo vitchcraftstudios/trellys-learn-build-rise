@@ -643,6 +643,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-main); line-height: 1.15; color: var(--
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 768px) {
+  /* Navbar */
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
   .nav-links.mobile-open {
@@ -652,8 +653,29 @@ h1,h2,h3,h4,h5 { font-family: var(--font-main); line-height: 1.15; color: var(--
     border-bottom: 1px solid var(--dark-200); box-shadow: var(--shadow-md);
   }
   .nav-links.mobile-open .nav-link { color: var(--dark-900); }
+
+  /* Hero & Layout Fixes */
+  .hero { 
+    align-items: flex-start; 
+    height: auto; min-height: 100vh;
+    padding-top: calc(var(--nav-h) + 20px); 
+    padding-bottom: 60px;
+  }
+  .hero-content { padding: 20px 16px 40px; }
+  .hero-title { font-size: 2.8rem; }
+  .hero-subtitle { font-size: 1.05rem; margin-bottom: 32px; }
+  
+  .hero-badges { gap: 8px; }
+  .badge { font-size: 0.75rem; padding: 6px 14px; }
+  
+  .hero-cta-group { flex-direction: column; width: 100%; align-items: center; gap: 12px; margin-bottom: 48px;}
+  .hero-cta-group .btn { width: 100%; max-width: 320px; }
+  
+  .hero-pillars { gap: 16px; }
+  .pillar { padding: 18px 24px; min-width: 100%; }
+
   .why-stats { grid-template-columns: 1fr 1fr; }
   .course-list { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 40px; }
 }
