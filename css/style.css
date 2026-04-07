@@ -400,16 +400,28 @@ h1,h2,h3,h4,h5 { font-family: var(--font-main); line-height: 1.15; color: var(--
 .trusted-strip {
   background: var(--white);
   border-top: 1px solid var(--dark-200); border-bottom: 1px solid var(--dark-200);
-  padding: 40px 0;
+  padding: 40px 0; overflow: hidden;
 }
 .trusted-label {
   text-align: center; font-size: .9rem; font-weight: 700;
   letter-spacing: .15em; text-transform: uppercase; color: var(--dark-400); margin-bottom: 24px;
 }
-.trust-logos { display: flex; justify-content: center; align-items: center; gap: 36px; flex-wrap: wrap; }
+.trust-marquee {
+  display: flex; overflow: hidden; gap: 36px;
+  width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); /* bleed out of container if any */
+}
+.trust-marquee:hover .trust-logos-group { animation-play-state: paused; }
+.trust-logos-group {
+  display: flex; gap: 36px; align-items: center; flex-shrink: 0;
+  animation: scrollMarquee 25s linear infinite;
+}
+@keyframes scrollMarquee {
+  100% { transform: translateX(calc(-100% - 36px)); }
+}
 .trust-item {
   font-family: var(--font-main); font-weight: 700; font-size: 1.05rem; color: var(--dark-500);
   padding: 10px 22px; background: var(--off-white); border: 1px solid var(--dark-200); border-radius: var(--radius-pill);
+  white-space: nowrap; flex-shrink: 0; display: inline-flex;
 }
 
 /* ─── FEATURES ────────────────────────────────────────────────── */
