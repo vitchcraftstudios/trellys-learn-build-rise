@@ -593,12 +593,31 @@ h1,h2,h3,h4,h5 { font-family: var(--font-main); line-height: 1.15; color: var(--
 .sm-label { font-size: 0.85rem; color: var(--dark-500); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
 
 @media (max-width: 991px) {
-  .founder-grid { grid-template-columns: 1fr; gap: 60px; }
-  .founder-visual { max-width: 500px; margin: 0 auto; }
-  .founder-experience-badge { bottom: -20px; right: -20px; width: 120px; height: 120px; padding: 20px; }
-  .badge-num { font-size: 1.5rem; }
-  .founder-text { padding-left: 0; text-align: center; }
-  .founder-stats-mini { justify-content: center; }
+  .founder-grid { grid-template-columns: 1fr; gap: 40px; }
+  .founder-visual { max-width: 100%; width: 90%; margin: 0 auto; }
+  .founder-image-wrapper { position: relative; margin-bottom: 30px; }
+  .founder-experience-badge { 
+    bottom: -10px !important; right: -10px !important; 
+    width: 110px !important; height: 110px !important; 
+    padding: 15px !important; border-width: 3px !important;
+  }
+  .badge-num { font-size: 1.4rem !important; }
+  .badge-label { font-size: 0.65rem !important; line-height: 1.1 !important; }
+  
+  .founder-text { text-align: center; padding-left: 0; }
+  .founder-bio p { font-size: 1rem; }
+  .founder-stats-mini { 
+    display: flex; gap: 16px; margin: 32px 0; justify-content: center; 
+    border: none; padding: 0;
+  }
+  .stat-mini { 
+    flex: 1; min-width: 140px; background: var(--off-white); 
+    padding: 24px 16px; border-radius: var(--radius-md); 
+    border: 1px solid var(--dark-200); box-shadow: var(--shadow-sm);
+  }
+  .stat-icon { font-size: 1.5rem; margin-bottom: 10px; display: block; }
+  .sm-num { font-size: 1.6rem; }
+  .sm-label { font-size: 0.75rem; }
 }
 
 /* ─── COURSES PAGE ────────────────────────────────────────────── */
