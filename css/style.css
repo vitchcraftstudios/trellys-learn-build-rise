@@ -556,27 +556,49 @@ h1,h2,h3,h4,h5 { font-family: var(--font-main); line-height: 1.15; color: var(--
 .about-mission { padding: 100px 0; background: var(--white); }
 .about-mission-inner p { font-size: 1.15rem; color: var(--dark-600); }
 
-.founder-section { padding: 100px 0; background: var(--light-bg); }
+.founder-section { padding: 120px 0; background: var(--white); position: relative; overflow: hidden; }
 .founder-grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 80px;
   align-items: center;
 }
-.founder-text h2 { font-size: 2.4rem; }
-.founder-text p { font-size: 1.1rem; color: var(--dark-700); margin-bottom: 20px; }
-.founder-role { font-size: 1.1rem; color: var(--green-600); font-weight: 700; margin-bottom: 24px; }
+.founder-visual { position: relative; }
+.founder-image-wrapper { position: relative; border-radius: var(--radius-xl); overflow: visible; }
+.founder-img { width: 100%; border-radius: var(--radius-xl); filter: grayscale(10%) contrast(1.05); border: 2px solid var(--dark-200); box-shadow: var(--shadow-lg); transition: var(--transition-slow); }
+.founder-image-wrapper:hover .founder-img { transform: scale(1.02); filter: grayscale(0%); }
 
-.team-section { padding: 100px 0; background: var(--white); }
-.team-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;
+.founder-experience-badge {
+  position: absolute; bottom: -30px; right: -30px;
+  background: var(--green-600); color: var(--white);
+  padding: 30px; border-radius: 50%; width: 140px; height: 140px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; box-shadow: var(--shadow-green); border: 4px solid var(--white);
+  animation: pulseBadge 3s infinite; z-index: 10;
 }
-.team-card { background: var(--light-bg); border-color: var(--dark-200); text-align: center; padding: 40px 30px; border-radius: var(--radius-xl); border: 1px solid var(--dark-200);}
-.team-avatar {
-  font-size: 3rem; width: 90px; height: 90px;
-  background: var(--white); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  margin: 0 auto 24px; box-shadow: var(--shadow-sm);
+@keyframes pulseBadge {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.badge-num { font-size: 1.8rem; font-weight: 800; font-family: var(--font-main); line-height: 1; }
+.badge-label { font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; margin-top: 4px; line-height: 1.2; }
+
+.founder-text { padding-left: 20px; }
+.founder-role { font-size: 1.15rem; color: var(--green-700); font-weight: 800; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.05em; }
+.founder-bio p { font-size: 1.05rem; color: var(--dark-700); line-height: 1.8; margin-bottom: 20px; }
+
+.founder-stats-mini { display: flex; gap: 40px; margin: 40px 0; padding: 30px 0; border-top: 1px solid var(--dark-200); border-bottom: 1px solid var(--dark-200); }
+.stat-mini { display: flex; flex-direction: column; }
+.sm-num { font-size: 2rem; font-weight: 900; color: var(--dark-900); font-family: var(--font-main); }
+.sm-label { font-size: 0.85rem; color: var(--dark-500); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+
+@media (max-width: 991px) {
+  .founder-grid { grid-template-columns: 1fr; gap: 60px; }
+  .founder-visual { max-width: 500px; margin: 0 auto; }
+  .founder-experience-badge { bottom: -20px; right: -20px; width: 120px; height: 120px; padding: 20px; }
+  .badge-num { font-size: 1.5rem; }
+  .founder-text { padding-left: 0; text-align: center; }
+  .founder-stats-mini { justify-content: center; }
 }
 
 /* ─── COURSES PAGE ────────────────────────────────────────────── */
