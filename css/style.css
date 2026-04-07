@@ -449,11 +449,18 @@ h1,h2,h3,h4,h5 { font-family: var(--font-main); line-height: 1.15; color: var(--
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
-.phil-col { padding: 40px; background: var(--light-bg); border: 1px solid var(--dark-200); border-radius: var(--radius-xl); }
-.phil-col h3 { font-size: 1.25rem; color: var(--green-700); margin-bottom: 24px; }
-.phil-col ul { display: flex; flex-direction: column; gap: 16px; }
-.phil-col li { font-size: 1.05rem; color: var(--dark-700); padding-left: 28px; position: relative; font-weight: 500; }
-.phil-col li::before { content: '✓'; position: absolute; left: 0; color: var(--green-500); font-weight: 800; font-size: 1.2rem; }
+.phil-col { padding: 40px; background: var(--light-bg); border: 1px solid var(--dark-200); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); }
+.phil-col h3 { font-size: 1.25rem; color: var(--green-700); margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-main); font-weight: 800;}
+.phil-blocks { display: flex; flex-direction: column; gap: 16px; }
+.phil-block { 
+  display: flex; align-items: center; gap: 16px; 
+  background: var(--white); border: 1px solid var(--dark-200); 
+  padding: 16px 20px; border-radius: var(--radius-md); 
+  box-shadow: var(--shadow-sm); transition: var(--transition);
+}
+.phil-block:hover { transform: translateY(-3px); border-color: var(--green-400); box-shadow: 0 10px 20px rgba(26,122,60,.1); }
+.phil-icon { font-size: 1.4rem; flex-shrink: 0; background: var(--green-50); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 50%; opacity: 0.9;}
+.phil-block p { font-size: .95rem; color: var(--dark-800); font-weight: 600; margin: 0; line-height: 1.4;}
 
 /* ─── WHY TRELLYS ─────────────────────────────────────────────── */
 .why-trellys { padding: 120px 0; background: var(--white); }
