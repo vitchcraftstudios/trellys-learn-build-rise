@@ -116,7 +116,12 @@
         <!-- Form Column -->
         <div class="contact-form-box reveal" id="contact-form-col">
           <h2>Send us a Message</h2>
-          <form id="contact-form">
+          <form id="contact-form" action="https://formsubmit.co/ajax/support@trellysrise.com" method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_cc" value="trellysrise@gmail.com">
+            <input type="hidden" name="_subject" value="New Inquiry from Trellys Rise Website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
             <div class="form-row">
               <div class="form-group">
                 <label for="fname">First Name</label>
@@ -151,7 +156,7 @@
               <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
             </div>
             <button type="submit" class="btn btn-primary form-submit" id="submit-btn">Send Message</button>
-            <div class="form-success" id="form-success">
+            <div class="form-success" id="form-success" style="display: none;">
               ✓ Thank you! Your message has been sent successfully. We will get back to you soon.
             </div>
           </form>

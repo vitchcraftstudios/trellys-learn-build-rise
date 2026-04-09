@@ -80,17 +80,60 @@ if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     const btn = contactForm.querySelector('[type="submit"]');
+    const originalBtnText = btn.textContent;
     btn.textContent = 'Sending…';
     btn.disabled = true;
-    setTimeout(() => {
-      contactForm.reset();
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-      if (formSuccess) {
-        formSuccess.style.display = 'block';
-        setTimeout(() => formSuccess.style.display = 'none', 5000);
+
+    // Use FormData to collect all form fields (including hidden ones like _cc)
+    const formData = new FormData(contactForm);
+    const action = contactForm.getAttribute('action');
+
+    fetch(action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
       }
-    }, 1200);
+    })
+    .then(response => {
+      if (response.ok) {
+        contactForm.reset();
+        if (formSuccess) {
+          formSuccess.textContent = '✓ Thank you! Your message has been sent successfully. We will get back to you soon.';
+          formSuccess.style.background = '#d4f5e2'; // Light green bg
+          formSuccess.style.color = '#156634';      // Dark green text
+          formSuccess.style.padding = '15px';
+          formSuccess.style.borderRadius = '8px';
+          formSuccess.style.marginTop = '20px';
+          formSuccess.style.fontWeight = '600';
+          formSuccess.style.display = 'block';
+          // Scroll to success message
+          formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          setTimeout(() => {
+            formSuccess.style.display = 'none';
+          }, 6000);
+        }
+      } else {
+        throw new Error('Form submission failed');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      if (formSuccess) {
+        formSuccess.textContent = '❌ Oops! Something went wrong. Please try again later or email us directly at support@trellysrise.com';
+        formSuccess.style.background = '#fdeaea'; // Light red bg
+        formSuccess.style.color = '#721c24';      // Dark red text
+        formSuccess.style.padding = '15px';
+        formSuccess.style.borderRadius = '8px';
+        formSuccess.style.marginTop = '20px';
+        formSuccess.style.fontWeight = '600';
+        formSuccess.style.display = 'block';
+      }
+    })
+    .finally(() => {
+      btn.textContent = originalBtnText;
+      btn.disabled = false;
+    });
   });
 }
 
