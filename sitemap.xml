@@ -1,23 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- PRIMARY PAGES -->
   <url>
     <loc>https://www.trellysrise.com/</loc>
-    <lastmod>2025-04-09</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.trellysrise.com/courses.html</loc>
-    <lastmod>2025-04-09</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.trellysrise.com/about.html</loc>
-    <lastmod>2025-04-09</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.trellysrise.com/contact.html</loc>
-    <lastmod>2025-04-09</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <priority>0.7</priority>
+  </url>
+
+  <!-- LOCAL SEO PAGES -->
+  <url>
+    <loc>https://www.trellysrise.com/electrical-training-dehradun/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.trellysrise.com/electrical-training-roorkee/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.trellysrise.com/electrical-training-haridwar/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.trellysrise.com/electrical-training-rishikesh/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- NEW SECTIONS -->
+  <url>
+    <loc>https://www.trellysrise.com/blog/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.trellysrise.com/tools/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.trellysrise.com/simulator/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>

@@ -189,9 +189,24 @@ if (statNums.length && 'IntersectionObserver' in window) {
   statNums.forEach(n => statObs.observe(n));
 }
 
+// ─── FLOATING TELEGRAM INJECTION ──────────────────────────────
+function injectFloatingTG() {
+  if (document.getElementById('floating-tg-btn')) return; // Avoid duplicates
+  const tg = document.createElement('a');
+  tg.href = 'https://t.me/trellysrisechannel';
+  tg.className = 'floating-tg';
+  tg.id = 'floating-tg-btn';
+  tg.target = '_blank';
+  tg.rel = 'noopener';
+  tg.setAttribute('aria-label', 'Join Telegram');
+  tg.innerHTML = '<span class="tg-icon">✈</span><span class="tg-text">Join Community</span>';
+  document.body.appendChild(tg);
+}
+
 // ─── SPLASH SCREEN HIDE ──────────────────────────────────────
 window.addEventListener('load', () => {
   const splash = document.getElementById('splash-screen');
+  injectFloatingTG();
   if (splash) {
     setTimeout(() => {
       splash.classList.add('fade-out');
