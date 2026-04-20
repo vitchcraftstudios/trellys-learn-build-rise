@@ -24,6 +24,10 @@
   --gold-300:  #fae090;
   --gold-100:  #fef9e1;
   --gold-50:   #fffdf5;
+  
+  --whatsapp-green: #25D366;
+  --whatsapp-dark:  #128C7E;
+
 
   --dark-900: #111827;
   --dark-800: #1f2937;
@@ -167,6 +171,18 @@ h1,h2,h3,h4,h5 { font-family: var(--font-main); line-height: 1.15; color: var(--
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(245,197,24,.5);
 }
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, var(--whatsapp-green) 0%, var(--whatsapp-dark) 100%);
+  color: var(--white);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5);
+  color: var(--white);
+}
+
 
 .btn-outline {
   background: transparent;
